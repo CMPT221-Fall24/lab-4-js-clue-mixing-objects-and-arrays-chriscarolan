@@ -37,7 +37,8 @@ function pickMystery() {
 function revealMystery(mystery) {
     // knew it had to be similar to python, so looked up how to do ${}
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-    alert( `${mystery.suspect} killed Mr. Marist using the ${mystery.weapon} in the ${mystery.room}!`);
+    // main problem I ran into was using '' instead of ``
+    alert(`${mystery.suspect} killed Mr. Marist using the ${mystery.weapon} in the ${mystery.room}!`);
 }
 
 const revealButton = document.getElementById("revealButton");
